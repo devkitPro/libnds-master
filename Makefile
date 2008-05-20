@@ -1,0 +1,18 @@
+ifeq ($(strip $(DEVKITPRO)),)
+$(error "Please set DEVKITPRO in your environment. export DEVKITPRO=<path to>devkitPro")
+endif
+ 
+
+install: libnds-install dswifi-install maxmod-install default-arm7-install
+
+libnds-install:
+	@$(MAKE) -C libnds install
+
+dswifi-install:
+	@$(MAKE) -C dswifi install
+
+maxmod-install:
+	@! [ -d maxmod ] || $(MAKE) -C maxmod install-nds
+
+default-arm7-install:
+	@$(MAKE) -C default_arm7 install

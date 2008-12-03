@@ -12,7 +12,7 @@ dswifi-install:
 	@$(MAKE) -C dswifi install
 
 maxmod-install:
-	@! [ -d maxmod ] || $(MAKE) -C maxmod install-nds
+	@$(MAKE) -C maxmod install-nds
 
 default-arm7-install:
 	@$(MAKE) -C default_arm7 install

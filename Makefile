@@ -5,13 +5,16 @@ endif
 SUBDIRS:= $(shell ls | egrep -v '^(CVS)$$')
 
 
-install: libnds-install dswifi-install maxmod-install default-arm7-install filesystem-install
+install: libnds-install dswifi-install maxmod-install default-arm7-install libfat-install filesystem-install
 
 libnds-install:
 	@$(MAKE) -C libnds install
 
 dswifi-install:
 	@$(MAKE) -C dswifi install
+
+libfat-install:
+	@$(MAKE) -C libfat nds-install
 
 maxmod-install:
 	@$(MAKE) -C maxmod install-nds

@@ -1,0 +1,2 @@
+modules="default-arm7 dswifi filesystem libfat libnds maxmod nds-examples"
+

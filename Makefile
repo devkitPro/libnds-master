@@ -20,7 +20,7 @@ maxmod-install:
 	@$(MAKE) -C maxmod install-nds
 
 default-arm7-install:
-	@$(MAKE) -C default_arm7 install
+	@$(MAKE) -C default-arm7 install
 
 filesystem-install:
 	@$(MAKE) -C filesystem install

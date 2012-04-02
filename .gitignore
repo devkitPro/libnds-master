@@ -1,6 +1,7 @@
 default-arm7
 dswifi
 filesystem
+gitroot
 libfat
 libnds
 maxmod

@@ -3,10 +3,10 @@
 if [ ! -f ./gitroot ]; then
 	cat > gitroot <<- EOF
 	# For read/write access uncomment this line and replace <user> with your SF username
-	#GITROOT=ssh://<user>@devkitpro.git.sourceforge.net/gitroot/devkitpro
+	#GITROOT=ssh://<user>@git.code.sf.net/p/devkitpro
 
 	# For read only access uncomment this line
-	#GITROOT=git://devkitpro.git.sourceforge.net/gitroot/devkitpro
+	#GITROOT=git://git.code.sf.net/p/devkitpro
 	EOF
 fi
 . ./gitroot
